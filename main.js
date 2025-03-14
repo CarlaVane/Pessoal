@@ -1,40 +1,35 @@
-var typed= new Typed(".text",{
-strings:["desenvolvedora frontend"," desenvolvedora Web"],
-typeSpeed:100,
-backSpeed:100,
-backDelay:1000,
-loop:true
-});
-
-
-// arquivo.js
-
-// Espera até que o DOM esteja completamente carregado
 document.addEventListener('DOMContentLoaded', function() {
+    // Inicialização do Typed.js
+    var typed = new Typed(".text", {
+        strings: ["Desenvolvedora Full-Stack", "Estudante de Engenharia de Software", "Criadora de Soluções Digitais"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true
+    });
+
+    // Formulário de Contato
     var form = document.getElementById('contactoForm');
+    var messageSent = document.getElementById('messageSent');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault();
+        event.preventDefault(); // Impede o envio padrão do formulário
 
+        // Obter valores do formulário
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
         var message = document.getElementById('message').value;
 
-        // Aqui você pode adicionar lógica para enviar os dados para um servidor,
-        // por exemplo, usando fetch() ou XMLHttpRequest().
-        // Neste exemplo, estamos simulando um tempo de envio com setTimeout.
-
+        // Simulação de envio do formulário
         setTimeout(function() {
-            // Exibir mensagem de formulário enviado
-     
+            // Exibe a mensagem de sucesso
+            messageSent.style.display = "block";
+            form.reset(); // Limpa o formulário
 
-            // Limpar campos do formulário após o envio
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
-
-            // Alternativamente, você pode usar form.reset() para limpar todos os campos do formulário:
-            // form.reset();
-        }, 1000); // Simulação de tempo de envio (1 segundo)
+            // Esconde a mensagem de sucesso após 3 segundos
+            setTimeout(function() {
+                messageSent.style.display = "none";
+            }, 3000);
+        }, 1000);
     });
 });

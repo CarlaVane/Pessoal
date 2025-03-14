@@ -7,52 +7,42 @@
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
-    <header class="cabecalho"> 
-        <a href="#" class="logo">Carla.</a>
 
+    <header class="cabecalho">
+        <a href="#" class="logo">Carla.</a>
         <nav class="navbar">
             <a href="#" style="--i:1" class="active">Home</a>
             <a href="#sobre" style="--i:2">Sobre mim</a>
             <a href="#servicos" style="--i:3">Habilidades</a>
             <a href="#contactos" style="--i:5">Contacto</a>
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>
         </nav>
     </header>
 
     <section class="home">
         <div class="imagem">
-            <img class="imagem1" src="WhatsApp Image 2023-12-08 at 09.27.35.jpeg" alt="Carla">
+            <img class="imagem1" src="assets/WhatsApp Image 2023-12-08 at 09.27.35.jpeg" alt="Carla">
         </div>
         <div class="home-content">
-            <h3>Olá, esta sou eu</h3>
             <h1>Carla Morais</h1>
             <h3>Eu sou <span class="text"></span></h3>
-            <p class="one">Sou uma desenvolvedora com uma ampla experiência, especializada em desenvolvimento para
-                desktop e web. Minha paixão é transformar ideias em realidade digital, criando sites inovadores e
-                aplicativos de desktop...</p>
-            <div class="home-sci">
-                <a href="#sobre" class="btn">Mais sobre mim</a>
-            </div>
+            <p class="one">Sou uma desenvolvedora full-stack com uma sólida experiência em criar soluções inovadoras para plataformas desktop e web. Minha verdadeira paixão é transformar ideias em experiências digitais impactantes, desenvolvendo sites dinâmicos e aplicativos personalizados que atendem às necessidades dos usuários. Estou sempre à frente das tendências tecnológicas, pronta para oferecer soluções interativas e completas que fazem a diferença no mundo digital.</p>
+            <a href="#sobre" class="btn">Mais sobre mim</a>
+           
         </div>
     </section>
 
     <section class="sobre" id="sobre">
         <div class="sobre-texto">
             <h2>Sobre <span>Mim</span></h2>
-            <p>Eu sou Carla Morais, uma estudante de Engenharia Informática e Sistemas de Informação,
-                com uma paixão especial por desenvolvimento web e front-end. Tenho focado meu aprendizado e
-                desenvolvimento em desktop e web, adquirindo um sólido domínio em banco de dados e controle de versões.
-                Como desenvolvedora web e front-end, estou preparada para fornecer soluções inovadoras usando essas
-                tecnologias. Estou sempre em busca de novos desafios e tenho uma grande vontade de embarcar em novas
-                tecnologias. Acredito que os desafios são oportunidades para o meu crescimento profissional e acadêmico.
-                Minha meta é usar minhas habilidades técnicas e criativas para desenvolver soluções digitais que possam
-                trazer valor e fazer a diferença. E estou bastante ansiosa para aplicar meu conhecimento e habilidades
-                em projetos futuros e estou aberta a oportunidades onde posso continuar a aprender e crescer.</p>
+            <p>Eu sou Carla Morais, uma estudante de Engenharia Informática e Sistemas de Informação, com uma paixão especial por desenvolvimento web e front-end. Tenho focado meu aprendizado e desenvolvimento em desktop e web, adquirindo um sólido domínio em banco de dados e controle de versões. Como desenvolvedora web e front-end, estou preparada para fornecer soluções inovadoras usando essas tecnologias. Estou sempre em busca de novos desafios e tenho uma grande vontade de embarcar em novas tecnologias. Acredito que os desafios são oportunidades para o meu crescimento profissional e acadêmico. Minha meta é usar minhas habilidades técnicas e criativas para desenvolver soluções digitais que possam trazer valor e fazer a diferença. E estou bastante ansiosa para aplicar meu conhecimento e habilidades em projetos futuros e estou aberta a oportunidades onde posso continuar a aprender e crescer.</p>
         </div>
-       
     </section>
 
     <section class="servicos" id="servicos">
@@ -62,22 +52,17 @@
                 <div>
                     <i class='bx bx-code' style="color:#EC0A85"></i>
                     <h2>Desenvolvimento web e desktop</h2>
-                    <p class="Listagem">Criação e design de sites responsivos, com foco na experiência do usuário. E a
-                        criação de aplicativos de desktop personalizados para atender às necessidades específicas dos
-                        clientes.</p>
-                    
+                    <p class="Listagem">Criação e design de sites responsivos, com foco na experiência do usuário. E a criação de aplicativos de desktop personalizados para atender às necessidades específicas dos clientes.</p>
                 </div>
                 <div>
                     <i class='bx bx-data' style="color:#EC0A85"></i>
                     <h2>Gestão de Banco de Dados</h2>
                     <p>Criação, manutenção e otimização de bancos de dados para garantir um desempenho eficiente.</p>
-             
                 </div>
                 <div>
                     <i class='bx bxl-git' style="color:#EC0A85"></i>
                     <h2>Controle de Versões</h2>
                     <p>Gerenciamento e rastreamento de mudanças no código do projeto.</p>
-                
                 </div>
             </div>
         </div>
@@ -117,7 +102,6 @@
         </div>
         <div class="containerTwo">
             <h1 class="cabecalhoOne">Competências Profissionais</h1>
-
             <div class="circle-row">
                 <div class="circle-wrapper">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -126,38 +110,31 @@
                         <text x="100" y="110" text-anchor="middle" fill="black" font-size="20">70%</text>
                     </svg>
                 </div>
-            <div class="text">Trabalho de Equipa</div>
+                <div class="text">Trabalho de Equipe</div>
             </div>
-    
-        <div class="circle-row">
-            <div class="circle-wrapper">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="progressoBarra" cx="100" cy="100" r="80"></circle>
-                    <circle class="progress-path" cx="100" cy="100" r="80" style="--percent: 80;"></circle>
-                    <text x="100" y="110" text-anchor="middle" fill="black" font-size="20">80%</text>
-                </svg>
+            <div class="circle-row">
+                <div class="circle-wrapper">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progressoBarra" cx="100" cy="100" r="80"></circle>
+                        <circle class="progress-path" cx="100" cy="100" r="80" style="--percent: 80;"></circle>
+                        <text x="100" y="110" text-anchor="middle" fill="black" font-size="20">80%</text>
+                    </svg>
+                </div>
+                <div class="text">Criatividade</div>
             </div>
-            <div class="text">Criatividade</div>
-        </div>
-        <div class="circle-row">
-            <div class="circle-wrapper">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="progressoBarra" cx="100" cy="100" r="80"></circle>
-                    <circle class="progress-path" cx="100" cy="100" r="80" style="--percent: 85;"></circle>
-                    <text x="100" y="110" text-anchor="middle" fill="black" font-size="20">85%</text>
-                </svg>
+            <div class="circle-row">
+                <div class="circle-wrapper">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progressoBarra" cx="100" cy="100" r="80"></circle>
+                        <circle class="progress-path" cx="100" cy="100" r="80" style="--percent: 85;"></circle>
+                        <text x="100" y="110" text-anchor="middle" fill="black" font-size="20">85%</text>
+                    </svg>
+                </div>
+                <div class="text">Comunicação</div>
             </div>
-            <div class="text">Comunicação</div>
         </div>
-        </div>
-
-        </div>
-
     </section>
 
-
-
-    
     <footer class="Contactos" id="contactos">
         <div class="footer-container">
             <h1 class="sub-titulo">Entre em Contato</h1>
@@ -165,27 +142,22 @@
                 <form id="contactoForm" action="#" method="post">
                     <label for="name">Nome:</label><br>
                     <input type="text" id="name" name="name" required><br>
-    
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" required><br>
-    
                     <label for="message">Mensagem:</label><br>
                     <textarea id="message" name="message" required></textarea><br>
-    
                     <input type="submit" value="Enviar">
+                    <div id="messageSent" style="display: none;">Mensagem enviada com sucesso!</div>
                 </form>
             </div>
-            <div class="footer-content" >
-                <!-- Qualquer outro conteúdo de rodapé aqui -->
+            <div class="footer-content">
                 <p>© 2024 Carla Vanessa da Silva Morais. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-    
-    <script src="main.js">
+  
 
-
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
